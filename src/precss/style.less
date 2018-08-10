@@ -243,21 +243,20 @@ body{
 }
 //Buy section end
 //contacts start
+.angle-block{
+    background-color: @color-445161;
+    transform: skewY(3deg);
+    transform-origin: 0;
+    z-index: -1;
+    width: 100%;
+    min-height: 100px;
+    margin-top: 35px;
+}
 .contacts{
-    margin-top:100px;
     position:relative;
     width:100%;
     background:@color-445161;
     padding-bottom: 50px;
-    &:before{
-        content:'';
-        position:absolute;
-        top:-50px;
-        width:0;
-        height:0;
-        border-bottom: 50px solid @color-445161; 
-        border-right: 94vw solid transparent;
-    }
     &-wrapper{
         .wrapper();
         h2{
